@@ -3,16 +3,19 @@
  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
  x:Class="Proiect_Aplicatia_Mobila.AboutPage"
  Title="AboutPage">
-    <VerticalStackLayout Spacing="10" Margin="10">
-        <HorizontalStackLayout Spacing="10">
-            <Image Source="shop_list.png"
- SemanticProperties.Description="My Shopping List"
-HeightRequest="64" />
-            <Label FontSize="22" FontAttributes="Bold" Text="My Shopping
-Lists" VerticalOptions="End" />
-            <Label FontSize="22" Text="v1.0" VerticalOptions="End" />
-        </HorizontalStackLayout>
-        <Label Text="This app will help you to manage your shopping lists" />
-
-    </VerticalStackLayout>
+    <StackLayout>
+        <Image Source="store.png" WidthRequest="300" HeightRequest="300"/>
+        <Label Text="Magazinul nostru de electrocasnice a fost fondat in anul 2005. Ne-am inceput activitatea cu o gama limitata de produse, dar in prezent oferim o varietate de electrocasnice pentru toate nevoile clientilor nostri."
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand" />
+        <Label Text="Locatie: Strada X, nr. Y, orasul Z"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand" />
+        <Label Text="Telefon: +40 123 456 789"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand" />
+        <Label Text="Email: contact@magazinulnostru.com"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand" />
+    </StackLayout>
 </ContentPage>

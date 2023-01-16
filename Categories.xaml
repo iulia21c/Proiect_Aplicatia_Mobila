@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Proiect_Aplicatie_Mobila.Category"
-             Title="Services">
-    <ListView ItemsSource="{Binding categories}">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <StackLayout Orientation="Horizontal" Padding="30">
-                        <Image Source="{Binding Image}" WidthRequest="100" HeightRequest="100"  />
-                        <StackLayout Margin="20,0,20,0">
-                            <Label Text="{Binding Name}" FontAttributes="Bold" Padding="10" FontSize="Medium" FontFamily="Verdana"/>
-                            <Label Text="{Binding Details}" Padding="10"/>
+             x:Class="Proiect_Aplicatia_Mobila.Categories">
+    <StackLayout>
+        <ListView x:Name="categoryListView" ItemsSource="{Binding categories}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="30">
+                            <Image Source="{Binding Image}" WidthRequest="200" HeightRequest="200" />
+                            <StackLayout>
+                                <Label Text="{Binding Name}" FontAttributes="Bold" Padding="10" FontSize="Medium" FontFamily="Verdana" />
+                                <Label Text="{Binding Details}" Padding="10"/>
+                            </StackLayout>
                         </StackLayout>
-                    </StackLayout>
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+
 </ContentPage>

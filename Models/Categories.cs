@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proiect_Aplicatia_Mobila.Models
 {
-    public class Category
+    public class Categories
     {
         public string Name { get; set; }
         public ImageSource Image { get; set; }
