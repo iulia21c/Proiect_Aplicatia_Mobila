@@ -10,21 +10,21 @@
             VerticalOptions="Center">
 
             <Label
-                Text="Apicatia mea mobila!"
+                Text="Electronics store"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
 
 
             <Image
-                Source="magazin.png"
+                Source="magazin3.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
                 HorizontalOptions="Center" />
 
            
             <Label
-                Text="Welcome to .NET Multi-platform App UI"
+                Text="Bine ati venit la magazinul nostru!"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
                 FontSize="18"
