@@ -19,6 +19,7 @@
  Title="My Shopping Lists"
  ContentTemplate="{DataTemplate local:ListEntryPage}"
  />
+        <ShellContent Title="Categories" ContentTemplate="{DataTemplate local:Categories}" />
     </TabBar>
 
 </Shell>

@@ -3,10 +3,10 @@ namespace Proiect_Aplicatia_Mobila;
 
 public partial class ListPage : ContentPage
 {
-	public ListPage()
-	{
-		InitializeComponent();
-	}
+    public ListPage()
+    {
+        InitializeComponent();
+    }
     async void OnSaveButtonClicked(object sender, EventArgs e)
     {
         var slist = (ShopList)BindingContext;
@@ -21,4 +21,21 @@ public partial class ListPage : ContentPage
         await Navigation.PopAsync();
     }
 
+    async void OnChooseButtonClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new ProductPage((ShopList)
+       this.BindingContext)
+        {
+            BindingContext = new Product()
+        });
+
+    }
+
+    protected override async void OnAppearing()
+    {
+        base.OnAppearing();
+        var shopl = (ShopList)BindingContext;
+
+        listView.ItemsSource = await App.Database.GetListProductsAsync(shopl.ID);
+    }
 }
